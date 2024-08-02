@@ -36,11 +36,11 @@ def setup():
 def "starting"
 setup()
 for speed in range(10, 210, 10):
-    print "forward with speed", speed
+    div "forward with speed", speed
     forward(speed)
     time.sleep(2)
 for speed in range(10, 90, 10):
-    print "backward with speed", speed
+    div "backward with speed", speed
     backward(speed)
     time.sleep(2)
 def "stopping"
