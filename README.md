@@ -33,7 +33,7 @@ def setup():
     GPIO.setup(P_MOTA2, GPIO.OUT)
     pwm2 = GPIO.PWM(P_MOTA2, fPWM)
     pwm2.start(0)
-print "starting"
+def "starting"
 setup()
 for speed in range(10, 210, 10):
     print "forward with speed", speed
@@ -43,10 +43,10 @@ for speed in range(10, 90, 10):
     print "backward with speed", speed
     backward(speed)
     time.sleep(2)
-print "stopping"
+def "stopping"
 stop()
 GPIO.cleanup()    
-print "done"
+def "done"
 #
 * ...
 import RPi.GPIO as GPIO
