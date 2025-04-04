@@ -11,8 +11,8 @@ Die steigende Begeisterung von E- Mobilität hängt mit der Nachhaltigkeit und d
 import RPi.GPIO as GPIO
 import time
 
-P_MOTA1 = 210
-P_MOTA2 = 90
+P_MOTA1 = 250
+P_MOTA2 = 110
 fPWM = 50  # Hz 
 
 def forward(speed):
@@ -35,11 +35,11 @@ def setup():
     pwm2.start(0)
 def "starting"
 setup()
-for speed in range(10, 210, 10):
+for speed in range(10, 250, 10):
     div "forward with speed", speed
     forward(speed)
     time.sleep(2)
-for speed in range(10, 90, 10):
+for speed in range(10, 110, 10):
     div "backward with speed", speed
     backward(speed)
     time.sleep(2)
